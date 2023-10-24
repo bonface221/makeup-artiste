@@ -6,14 +6,17 @@ const config = {
 };
 export const theme = extendTheme({
   config,
-  fonts: {
-    heading: "'Oswald Variable', sans-serif",
-    text: "'Didact Gothic', sans-serif",
-  },
+
   components: {
     Heading: {
       baseStyle: {
         color: "brand.main",
+        fontFamily: "'Oswald Variable', sans-serif",
+      },
+    },
+    Text: {
+      baseStyle: {
+        fontFamily: "'Didact Gothic', sans-serif",
       },
     },
   },
