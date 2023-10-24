@@ -5,13 +5,61 @@ const Navbar = () => {
     <Box color="brand.white" py="20px">
       <Flex align="center" justify="space-between" w="100%">
         <Image src="/logo.svg" alt="logo" />
-        <Flex fontWeight={400} letterSpacing="0.6px" fontSize="20px" gap="38px">
-          <Text>Home</Text>
-          <Text>About</Text>
-          <Text>Services</Text>
-          <Text>Pricing</Text>
-          <Text>Portfolio</Text>
-          <Text>Contact</Text>
+        <Flex
+          fontWeight={400}
+          transition="all .3s ease-in-out"
+          letterSpacing="0.6px"
+          fontSize="20px"
+          gap="38px"
+        >
+          <Text
+            cursor="pointer"
+            _hover={{
+              color: "brand.main",
+            }}
+          >
+            Home
+          </Text>
+          <Text
+            cursor="pointer"
+            _hover={{
+              color: "brand.main",
+            }}
+          >
+            About
+          </Text>
+          <Text
+            cursor="pointer"
+            _hover={{
+              color: "brand.main",
+            }}
+          >
+            Services
+          </Text>
+          <Text
+            cursor="pointer"
+            _hover={{
+              color: "brand.main",
+            }}
+          >
+            Pricing
+          </Text>
+          <Text
+            cursor="pointer"
+            _hover={{
+              color: "brand.main",
+            }}
+          >
+            Portfolio
+          </Text>
+          <Text
+            cursor="pointer"
+            _hover={{
+              color: "brand.main",
+            }}
+          >
+            Contact
+          </Text>
         </Flex>
       </Flex>
     </Box>
