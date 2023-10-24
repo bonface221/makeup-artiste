@@ -2,6 +2,9 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import { Providers } from "./providers";
+// Supports weights 200-700
+import "@fontsource-variable/oswald";
+import "@fontsource/didact-gothic";
 
 const inter = Inter({ subsets: ["latin"] });
 

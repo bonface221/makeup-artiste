@@ -1021,6 +1021,16 @@
   resolved "https://registry.yarnpkg.com/@eslint/js/-/js-8.52.0.tgz#78fe5f117840f69dc4a353adf9b9cd926353378c"
   integrity sha512-mjZVbpaeMZludF2fsWLD0Z9gCref1Tk4i9+wddjRvpUNqqcndPkBD09N/Mapey0b3jaXbLm2kICwFv2E64QinA==
 
+"@fontsource-variable/oswald@^5.0.17":
+  version "5.0.17"
+  resolved "https://registry.yarnpkg.com/@fontsource-variable/oswald/-/oswald-5.0.17.tgz#0d5fdf4cce2f63c6ddca57525aa73403a70f2de6"
+  integrity sha512-MmP1H6JmM2OjNG8QFGx1Cjt8MEoD0D4QWD1kDW8iIgHGQwCfqr8CeEMzPh2OJPoCgctaxAl6d8RfNcQMJeAEHg==
+
+"@fontsource/didact-gothic@^5.0.17":
+  version "5.0.17"
+  resolved "https://registry.yarnpkg.com/@fontsource/didact-gothic/-/didact-gothic-5.0.17.tgz#7302fbb5e52bc7a47e8afb97fbab4eaeebc18ef6"
+  integrity sha512-wWME7EXtOkSw8XxRBO4KtBOsILG7XeFDcrASODhBENwYPOCSduPO3yEEh8BxBFmex48q7W0HlOXLOwUUUK4O9g==
+
 "@humanwhocodes/config-array@^0.11.13":
   version "0.11.13"
   resolved "https://registry.yarnpkg.com/@humanwhocodes/config-array/-/config-array-0.11.13.tgz#075dc9684f40a531d9b26b0822153c1e832ee297"

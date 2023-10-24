@@ -7,7 +7,8 @@ const config = {
 export const theme = extendTheme({
   config,
   fonts: {
-    heading: "'Space Grotesk Variable', sans-serif",
+    heading: "'Oswald Variable', sans-serif",
+    text: "'Didact Gothic', sans-serif",
   },
   components: {
     Heading: {
@@ -19,13 +20,11 @@ export const theme = extendTheme({
 
   colors: {
     brand: {
-      main: "#2E3192",
-      white: "#ffff",
-      red: "#e84c3d",
-      black: "#000000",
-      lightBlue: "#c2bede",
-      lightBlack: "#262626",
-      bg: "#F9F9F9",
+      main: "#FF9999",
+      white: "#FFF5F5",
+      black: "#1A0F0F",
+      gray: "#BBBBBB",
+      lightBlue: "#F0F0F0",
     },
   },
 });
