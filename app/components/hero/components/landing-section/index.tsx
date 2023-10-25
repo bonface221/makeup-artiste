@@ -29,7 +29,7 @@ const LandingSection = () => {
           <Heading
             as="h1"
             color="brand.white"
-            fontSize="70px"
+            fontSize={{ base: "45px", sm: "70px" }}
             lineHeight="26px"
             letterSpacing="12.6px"
             fontWeight={400}

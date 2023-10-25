@@ -19,7 +19,7 @@ const MyServices = () => {
           as="h1"
           color="brand.black"
           fontWeight={400}
-          fontSize="45px"
+          fontSize={{ base: "30px", sm: "45px" }}
           lineHeight="22px"
           letterSpacing="3px"
           mb="58px"

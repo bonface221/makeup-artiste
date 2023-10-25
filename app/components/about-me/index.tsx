@@ -23,7 +23,7 @@ const AboutMe = () => {
         gap={{ base: "30px", md: "54px" }}
         align="center"
       >
-        <Box flex={1}>
+        <Box flex={1} order={{ base: 2, md: 1 }}>
           <Image
             borderRadius="md"
             w="100%"

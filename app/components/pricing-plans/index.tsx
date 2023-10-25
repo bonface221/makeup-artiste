@@ -11,7 +11,7 @@ import {
 const PricingPlan = () => {
   return (
     <Box bg="brand.lightBlue" py="90px">
-      <Stack mx={{ base: "20px", md: "70px", lg: "118px" }}>
+      <Stack mx={{ base: "10px", sm: "20px", md: "70px", lg: "118px" }}>
         <Heading
           color="brand.main"
           fontSize="15px"
@@ -47,6 +47,8 @@ const PricingPlan = () => {
         <SimpleGrid columns={{ base: 1, lg: 2 }} spacing="24px">
           {[1, 2].map((item) => (
             <Flex
+              borderRadius="md"
+              overflow="hidden"
               key={item}
               position="relative"
               _before={{
@@ -63,7 +65,7 @@ const PricingPlan = () => {
               bgSize="cover"
               bgPos="center"
               py="83px"
-              px="43px"
+              px={{ base: "15px", sm: "43px" }}
             >
               <Stack w="100%" zIndex={999} gap="40px">
                 <Heading
@@ -96,7 +98,11 @@ function PricesList({ name, price }: { name: string; price: string }) {
       <Text fontSize="15px" fontWeight={400} lineHeight="22px">
         {name}
       </Text>
-      <Image src="/prices-line.svg" flex={1} alt="prices-line" />
+      <Image
+        src="/prices-line.svg"
+        flex={{ base: 0, sm: 1 }}
+        alt="prices-line"
+      />
       <Text fontSize="15px" fontWeight={400} lineHeight="22px">
         ${price}
       </Text>

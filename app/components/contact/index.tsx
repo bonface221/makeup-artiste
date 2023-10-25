@@ -42,7 +42,7 @@ const contactData = [
 const Contact = () => {
   return (
     <Box py="90px" bg="brand.lightBlue">
-      <Stack mx="115px">
+      <Stack mx={{ base: "20px", md: "70px", lg: "118px" }}>
         <Heading
           color="brand.main"
           fontSize="15px"
@@ -109,7 +109,7 @@ const Contact = () => {
             >
               GET IN TOUCH
             </Heading>
-            <Flex gap={10}>
+            <Flex gap={10} flexDir={{ base: "column", sm: "row" }}>
               <Input
                 borderColor="rgba(26, 15, 15, 0.70)"
                 variant="flushed"

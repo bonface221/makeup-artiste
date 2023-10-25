@@ -2,8 +2,8 @@ import { Box, Heading, SimpleGrid, Stack, Image } from "@chakra-ui/react";
 
 const Portfolio = () => {
   return (
-    <Box px="115px" py="90px" bg="brand.secondary">
-      <Stack>
+    <Box py="90px" bg="brand.secondary">
+      <Stack mx={{ base: "20px", md: "70px", lg: "115px" }}>
         <Heading
           color="brand.main"
           fontSize="15px"

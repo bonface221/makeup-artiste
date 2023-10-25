@@ -35,7 +35,11 @@ const Footer = () => {
   return (
     <>
       <Box bg="brand.black" py="50px">
-        <SimpleGrid mx="105px" columns={{ base: 1, sm: 2, md: 3 }} gap="99px">
+        <SimpleGrid
+          mx={{ base: "20px", md: "70px", lg: "118px" }}
+          columns={{ base: 1, sm: 2, md: 3 }}
+          gap="99px"
+        >
           <Stack>
             <Image mb="40px" w="177px" src="/f1.svg" alt="footer image 1" />
             <Stack gap="24px">
@@ -123,6 +127,7 @@ const Footer = () => {
         py="12px"
         justify="center"
         bg="brand.black"
+        px="12px"
       >
         <Text
           color="brand.white"

@@ -9,6 +9,7 @@ const ServicesGrid = () => {
         columns={{ base: 1, sm: 2 }}
         mx={{ base: "50px", md: "100px", lg: "150px", xl: "240px" }}
         py="50px"
+        gap={6}
       >
         <Flex>
           <Image src="/sm1.png" width={318} height={400} alt="services-image" />

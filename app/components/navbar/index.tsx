@@ -1,7 +1,7 @@
 import { Box, Flex, Image, Text } from "@chakra-ui/react";
 import Drawer from "./components/drawer";
 
-const navItems = [
+export const navItems = [
   {
     name: "Home",
     link: "/",
@@ -35,7 +35,7 @@ const Navbar = () => {
         <Image src="/logo.svg" alt="logo" />
         <Flex
           fontWeight={400}
-          display={{ base: "none", md: "flex" }}
+          display={{ base: "none", lg: "flex" }}
           transition="all .3s ease-in-out"
           letterSpacing="0.6px"
           fontSize="20px"
@@ -53,7 +53,7 @@ const Navbar = () => {
             </Text>
           ))}
         </Flex>
-        <Box display={{ base: "block", md: "none" }}>
+        <Box display={{ base: "block", lg: "none" }}>
           <Drawer />
         </Box>
       </Flex>

@@ -14,10 +14,12 @@ import {
   Button,
 } from "@chakra-ui/react";
 import { RxHamburgerMenu } from "react-icons/rx";
+import { navItems } from "../..";
+
 const Drawer = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
   return (
-    <Box display={{ base: "block", md: "none" }}>
+    <Box>
       <IconButton
         as={RxHamburgerMenu}
         onClick={onOpen}
@@ -30,7 +32,7 @@ const Drawer = () => {
       />
       <D isOpen={isOpen} placement="right" onClose={onClose} size="xs">
         <DrawerOverlay />
-        <DrawerContent bg="rgba(5, 86, 140, 1)">
+        <DrawerContent bg="brand.main">
           <DrawerCloseButton
             color="red"
             w="48px"
@@ -54,68 +56,19 @@ const Drawer = () => {
               fontSize="20px"
               color="brand.white"
             >
-              <Text
-                _hover={{
-                  color: "brand.main",
-                  cursor: "pointer",
-                }}
-              >
-                Home
-              </Text>
-              <Text
-                as="a"
-                _hover={{
-                  color: "brand.main",
-                  cursor: "pointer",
-                }}
-                onClick={onClose}
-              >
-                Services
-              </Text>
-              <Text
-                as="a"
-                _hover={{
-                  color: "brand.main",
-                  cursor: "pointer",
-                }}
-                onClick={onClose}
-              >
-                About
-              </Text>
-              <Text
-                _hover={{
-                  color: "brand.main",
-                  cursor: "pointer",
-                }}
-                onClick={onClose}
-                as="a"
-              >
-                Why Us
-              </Text>
-              <Text
-                _hover={{
-                  color: "brand.main",
-                  cursor: "pointer",
-                }}
-                onClick={onClose}
-                as="a"
-              >
-                Contact{" "}
-              </Text>
-              <Button
-                _hover={{
-                  background: "brand.bgMain",
-                  color: "black",
-
-                  transform: "scale(1.03)",
-                }}
-                order={3}
-                color="brand.white"
-                bg="brand.main"
-                borderRadius="full"
-              >
-                Prime Sales System
-              </Button>
+              {navItems.map((nav) => (
+                <Text
+                  key={nav.name}
+                  color="brand.white"
+                  fontWeight="400"
+                  _hover={{
+                    color: "brand.dark",
+                    cursor: "pointer",
+                  }}
+                >
+                  {nav.name}
+                </Text>
+              ))}
             </Stack>
           </DrawerBody>
         </DrawerContent>
