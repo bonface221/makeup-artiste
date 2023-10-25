@@ -11,6 +11,7 @@ import {
 const PricingPlan = () => {
   return (
     <Box
+      id="pricing"
       bg="brand.lightBlue"
       py="90px"
       pos="relative"

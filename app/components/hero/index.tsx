@@ -1,11 +1,13 @@
-import { Box, Flex, Image, Stack } from "@chakra-ui/react";
+import { Box, Flex, Icon, Image, Stack } from "@chakra-ui/react";
 import Navbar from "../navbar";
 import LandingSection from "./components/landing-section";
+import GithubCTA from "./components/github-cta";
 
 const Hero = () => {
   return (
     <Flex
       bgImage="/hero-img.png"
+      id="home"
       pos="relative"
       bgRepeat="no-repeat"
       bgPos="center"
@@ -51,6 +53,7 @@ const Hero = () => {
         <Navbar />
         <LandingSection />
       </Stack>
+      <GithubCTA />
     </Flex>
   );
 };

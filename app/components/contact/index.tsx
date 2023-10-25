@@ -42,6 +42,7 @@ const contactData = [
 const Contact = () => {
   return (
     <Box
+      id="contact"
       py="90px"
       bg="brand.lightBlue"
       pos="relative"

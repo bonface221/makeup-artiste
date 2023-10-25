@@ -11,10 +11,10 @@ import {
   DrawerBody,
   Stack,
   Text,
-  Button,
 } from "@chakra-ui/react";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { navItems } from "../..";
+import Link from "next/link";
 
 const Drawer = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
@@ -57,17 +57,18 @@ const Drawer = () => {
               color="brand.white"
             >
               {navItems.map((nav) => (
-                <Text
-                  key={nav.name}
-                  color="brand.white"
-                  fontWeight="400"
-                  _hover={{
-                    color: "brand.dark",
-                    cursor: "pointer",
-                  }}
-                >
-                  {nav.name}
-                </Text>
+                <Link href={nav.link} key={nav.name}>
+                  <Text
+                    color="brand.white"
+                    fontWeight="400"
+                    _hover={{
+                      color: "brand.dark",
+                      cursor: "pointer",
+                    }}
+                  >
+                    {nav.name}
+                  </Text>
+                </Link>
               ))}
             </Stack>
           </DrawerBody>

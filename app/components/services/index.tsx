@@ -10,7 +10,7 @@ import {
 
 const MyServices = () => {
   return (
-    <Box bg="brand.lightBlue" py="96px">
+    <Box bg="brand.lightBlue" py="96px" id="services">
       <Stack mx={{ base: "20px", md: "70px", lg: "118px" }}>
         <Heading
           as="h4"

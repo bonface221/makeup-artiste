@@ -7,6 +7,7 @@ import {
   Stack,
   Text,
 } from "@chakra-ui/react";
+import Link from "next/link";
 
 const contactData = [
   {
@@ -136,7 +137,15 @@ const Footer = () => {
           fontWeight={400}
           lineHeight="26px"
         >
-          ©️ copyright 2023. All rights Reserved by Developer Wambui ❤️.
+          ©️ copyright 2023. All rights Reserved by Developer Wambui. Developed
+          ❤️ by{" "}
+          <Link
+            href="https://github.com/bonface221"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Bonface221
+          </Link>
         </Text>
       </Flex>
     </>

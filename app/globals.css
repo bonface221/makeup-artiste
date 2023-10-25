@@ -1,0 +1,18 @@
+body::-webkit-scrollbar {
+  width: 0.6rem;
+}
+/* Thumb */
+body::-webkit-scrollbar-thumb {
+  background-color: #ff9999;
+}
+body::-webkit-scrollbar-track {
+  background-color: #cccece;
+}
+
+body {
+  scroll-behavior: smooth;
+}
+
+html {
+  scroll-behavior: smooth;
+}

@@ -3,6 +3,7 @@ import { Box, Flex, Heading, Stack, Text, Image } from "@chakra-ui/react";
 const AboutMe = () => {
   return (
     <Box
+      id="about"
       bg="brand.secondary"
       py={{ base: "50px", sm: "96px" }}
       position="relative"

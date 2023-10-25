@@ -1,30 +1,31 @@
 import { Box, Flex, Image, Text } from "@chakra-ui/react";
 import Drawer from "./components/drawer";
+import Link from "next/link";
 
 export const navItems = [
   {
     name: "Home",
-    link: "/",
+    link: "#home",
   },
   {
     name: "About",
-    link: "/about",
+    link: "#about",
   },
   {
     name: "Services",
-    link: "/services",
+    link: "#services",
   },
   {
     name: "Pricing",
-    link: "/pricing",
+    link: "#pricing",
   },
   {
     name: "Portfolio",
-    link: "/portfolio",
+    link: "#portfolio",
   },
   {
     name: "Contact",
-    link: "/contact",
+    link: "#contact",
   },
 ];
 
@@ -42,15 +43,16 @@ const Navbar = () => {
           gap="38px"
         >
           {navItems.map((nav) => (
-            <Text
-              key={nav.name}
-              cursor="pointer"
-              _hover={{
-                color: "brand.main",
-              }}
-            >
-              {nav.name}
-            </Text>
+            <Link href={nav.link} key={nav.name}>
+              <Text
+                cursor="pointer"
+                _hover={{
+                  color: "brand.main",
+                }}
+              >
+                {nav.name}
+              </Text>
+            </Link>
           ))}
         </Flex>
         <Box display={{ base: "block", lg: "none" }}>

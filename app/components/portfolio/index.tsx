@@ -3,6 +3,7 @@ import { Box, Heading, SimpleGrid, Stack, Image } from "@chakra-ui/react";
 const Portfolio = () => {
   return (
     <Box
+      id="portfolio"
       py="90px"
       bg="brand.secondary"
       pos="relative"
