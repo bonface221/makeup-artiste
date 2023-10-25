@@ -1,4 +1,4 @@
-import { Box, Heading, Stack } from "@chakra-ui/react";
+import { Box, Heading, SimpleGrid, Stack, Image } from "@chakra-ui/react";
 
 const Portfolio = () => {
   return (
@@ -36,6 +36,29 @@ const Portfolio = () => {
         >
           PORTFOLIO
         </Heading>
+
+        <SimpleGrid columns={{ base: 1, sm: 2, md: 3 }} gap="24px">
+          {new Array(12).fill("").map((p, index) => (
+            <Stack
+              key={index}
+              h="fit-content"
+              transition="all .3s ease-in-out"
+              _hover={{
+                boxShadow: "md",
+                filter: "brightness(1.1)",
+                cursor: "pointer",
+              }}
+            >
+              <Image
+                borderRadius="md"
+                height="fit-content"
+                boxShadow="sm"
+                src={`/p${index + 1}.png`}
+                alt="portfolio image"
+              />
+            </Stack>
+          ))}
+        </SimpleGrid>
       </Stack>
     </Box>
   );
