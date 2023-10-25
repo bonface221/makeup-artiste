@@ -4,7 +4,7 @@ const AboutMe = () => {
   return (
     <Box
       bg="brand.secondary"
-      py="96px"
+      py={{ base: "50px", sm: "96px" }}
       position="relative"
       _before={{
         content: `""`,
@@ -12,7 +12,7 @@ const AboutMe = () => {
         width: "85px",
         height: "2px",
         bottom: "0",
-        transform: "rotate(90deg)",
+        transform: "translate(-50%, -100%) rotate(90deg)",
         left: "50%",
         background: "brand.main",
       }}
@@ -32,7 +32,7 @@ const AboutMe = () => {
             alt="about-me"
           />
         </Box>
-        <Stack flex={2} gap="24px">
+        <Stack flex={2} gap="24px" order={{ base: 1, md: 2 }}>
           <Heading
             as="h4"
             fontSize="15px"

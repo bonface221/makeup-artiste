@@ -2,7 +2,7 @@ import { Button, Grid, GridItem, Heading, Stack } from "@chakra-ui/react";
 
 const LandingSection = () => {
   return (
-    <Grid h="85vh" templateRows="repeat(5, 1fr)">
+    <Grid h={{ base: "80vh", sm: "85vh" }} templateRows="repeat(5, 1fr)">
       <GridItem gridRowStart={2}>
         <Stack gap="50px">
           <Heading

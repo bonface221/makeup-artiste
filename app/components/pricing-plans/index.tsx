@@ -10,7 +10,22 @@ import {
 
 const PricingPlan = () => {
   return (
-    <Box bg="brand.lightBlue" py="90px">
+    <Box
+      bg="brand.lightBlue"
+      py="90px"
+      pos="relative"
+      _before={{
+        content: `""`,
+        position: "absolute",
+        width: "85px",
+        height: "2px",
+        bottom: "0",
+        transform: "translate(-50%, -100%) rotate(90deg)",
+        left: "50%",
+        zIndex: 999,
+        background: "brand.main",
+      }}
+    >
       <Stack mx={{ base: "10px", sm: "20px", md: "70px", lg: "118px" }}>
         <Heading
           color="brand.main"

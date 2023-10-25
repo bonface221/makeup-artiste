@@ -41,7 +41,21 @@ const contactData = [
 
 const Contact = () => {
   return (
-    <Box py="90px" bg="brand.lightBlue">
+    <Box
+      py="90px"
+      bg="brand.lightBlue"
+      pos="relative"
+      _before={{
+        content: `""`,
+        position: "absolute",
+        width: "85px",
+        height: "2px",
+        bottom: "0",
+        transform: "translate(-50%, -100%) rotate(90deg)",
+        left: "50%",
+        background: "brand.main",
+      }}
+    >
       <Stack mx={{ base: "20px", md: "70px", lg: "118px" }}>
         <Heading
           color="brand.main"

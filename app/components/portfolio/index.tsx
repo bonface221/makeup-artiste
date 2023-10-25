@@ -2,7 +2,21 @@ import { Box, Heading, SimpleGrid, Stack, Image } from "@chakra-ui/react";
 
 const Portfolio = () => {
   return (
-    <Box py="90px" bg="brand.secondary">
+    <Box
+      py="90px"
+      bg="brand.secondary"
+      pos="relative"
+      _before={{
+        content: `""`,
+        position: "absolute",
+        width: "85px",
+        height: "2px",
+        bottom: "0",
+        transform: "translate(-50%, -100%) rotate(90deg)",
+        left: "50%",
+        background: "brand.main",
+      }}
+    >
       <Stack mx={{ base: "20px", md: "70px", lg: "115px" }}>
         <Heading
           color="brand.main"

@@ -1,4 +1,12 @@
-import { Box, Image, Heading, SimpleGrid, Stack, Text } from "@chakra-ui/react";
+import {
+  Box,
+  Image,
+  Heading,
+  SimpleGrid,
+  Stack,
+  Text,
+  Flex,
+} from "@chakra-ui/react";
 
 const MyServices = () => {
   return (
@@ -31,16 +39,17 @@ const MyServices = () => {
           {[1, 2].map((item) => (
             <Stack key={item} position="relative">
               <Image src="/s1.png" width="100%" height="100%" alt="service 1" />
-              {/* <Flex
+              <Flex
                 position="absolute"
                 bottom={0}
                 bg="brand.main"
                 color="brand.black"
                 transform="translateY(50%)"
-                w="455px"
-                h="100px"
+                w="90%"
+                h={{ base: "50px", md: "100px" }}
                 align="center"
-                mx="50px"
+                mx="5%"
+                zIndex={999}
               >
                 <Text
                   ml="24px"
@@ -50,7 +59,7 @@ const MyServices = () => {
                 >
                   Eye Makeup
                 </Text>
-              </Flex> */}
+              </Flex>
             </Stack>
           ))}
         </SimpleGrid>

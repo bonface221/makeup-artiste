@@ -3,7 +3,21 @@ import Image from "next/image";
 
 const ServicesGrid = () => {
   return (
-    <Box bg="brand.black">
+    <Box
+      bg="brand.black"
+      pos="relative"
+      _before={{
+        content: `""`,
+        position: "absolute",
+        width: "85px",
+        height: "2px",
+        bottom: "0",
+        transform: "translate(-50%, -100%) rotate(90deg)",
+        left: "50%",
+        zIndex: 999,
+        background: "brand.main",
+      }}
+    >
       <SimpleGrid
         alignItems="center"
         columns={{ base: 1, sm: 2 }}
