@@ -14,6 +14,7 @@ const Portfolio = () => {
         bottom: "0",
         transform: "translate(-50%, -100%) rotate(90deg)",
         left: "50%",
+        zIndex: 999,
         background: "brand.main",
       }}
     >

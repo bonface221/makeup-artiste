@@ -1,4 +1,4 @@
-import { Flex, Stack } from "@chakra-ui/react";
+import { Box, Flex, Image, Stack } from "@chakra-ui/react";
 import Navbar from "../navbar";
 import LandingSection from "./components/landing-section";
 
@@ -21,7 +21,27 @@ const Hero = () => {
         height: "100%",
         background: "rgba(0,0,0,0.6)",
       }}
+      _after={{
+        content: `""`,
+        position: "absolute",
+        width: "70px",
+        height: "2px",
+        bottom: "0",
+        transform: "translate(-50%, -100%) rotate(90deg)",
+        left: "50%",
+        zIndex: 999,
+        background: "brand.main",
+      }}
     >
+      <Box
+        pos="absolute"
+        bottom={8}
+        left="50%"
+        transform="translate(-50%,-50%)"
+      >
+        <Image src="/fa-down.png" alt="fa-down" />
+      </Box>
+
       <Stack
         gap={0}
         zIndex={999}
