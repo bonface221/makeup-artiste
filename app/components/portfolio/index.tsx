@@ -23,6 +23,7 @@ const Portfolio = () => {
           fontStyle="normal"
           mb="58px"
           mt="24px"
+          pos="relative"
           _after={{
             content: `""`,
             position: "absolute",

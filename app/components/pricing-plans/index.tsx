@@ -31,6 +31,16 @@ const PricingPlan = () => {
           fontStyle="normal"
           mb="58px"
           mt="24px"
+          position="relative"
+          _after={{
+            content: `""`,
+            position: "absolute",
+            width: "85px",
+            height: "2px",
+            bottom: "-25px",
+            left: 0,
+            background: "brand.main",
+          }}
         >
           PRICING PLAN
         </Heading>
