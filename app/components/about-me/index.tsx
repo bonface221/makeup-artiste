@@ -14,7 +14,7 @@ const AboutMe = () => {
         height: "2px",
         bottom: "0",
         transform: "rotate(90deg)",
-        left: 0,
+        left: "50%",
         background: "brand.main",
       }}
     >
