@@ -22,7 +22,12 @@ const Hero = () => {
         background: "rgba(0,0,0,0.6)",
       }}
     >
-      <Stack gap={0} zIndex={999} w="100%" mx="118px">
+      <Stack
+        gap={0}
+        zIndex={999}
+        w="100%"
+        mx={{ base: "20px", md: "70px", lg: "118px" }}
+      >
         <Navbar />
         <LandingSection />
       </Stack>

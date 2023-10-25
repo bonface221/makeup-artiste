@@ -1,4 +1,32 @@
 import { Box, Flex, Image, Text } from "@chakra-ui/react";
+import Drawer from "./components/drawer";
+
+const navItems = [
+  {
+    name: "Home",
+    link: "/",
+  },
+  {
+    name: "About",
+    link: "/about",
+  },
+  {
+    name: "Services",
+    link: "/services",
+  },
+  {
+    name: "Pricing",
+    link: "/pricing",
+  },
+  {
+    name: "Portfolio",
+    link: "/portfolio",
+  },
+  {
+    name: "Contact",
+    link: "/contact",
+  },
+];
 
 const Navbar = () => {
   return (
@@ -7,60 +35,27 @@ const Navbar = () => {
         <Image src="/logo.svg" alt="logo" />
         <Flex
           fontWeight={400}
+          display={{ base: "none", md: "flex" }}
           transition="all .3s ease-in-out"
           letterSpacing="0.6px"
           fontSize="20px"
           gap="38px"
         >
-          <Text
-            cursor="pointer"
-            _hover={{
-              color: "brand.main",
-            }}
-          >
-            Home
-          </Text>
-          <Text
-            cursor="pointer"
-            _hover={{
-              color: "brand.main",
-            }}
-          >
-            About
-          </Text>
-          <Text
-            cursor="pointer"
-            _hover={{
-              color: "brand.main",
-            }}
-          >
-            Services
-          </Text>
-          <Text
-            cursor="pointer"
-            _hover={{
-              color: "brand.main",
-            }}
-          >
-            Pricing
-          </Text>
-          <Text
-            cursor="pointer"
-            _hover={{
-              color: "brand.main",
-            }}
-          >
-            Portfolio
-          </Text>
-          <Text
-            cursor="pointer"
-            _hover={{
-              color: "brand.main",
-            }}
-          >
-            Contact
-          </Text>
+          {navItems.map((nav) => (
+            <Text
+              key={nav.name}
+              cursor="pointer"
+              _hover={{
+                color: "brand.main",
+              }}
+            >
+              {nav.name}
+            </Text>
+          ))}
         </Flex>
+        <Box display={{ base: "block", md: "none" }}>
+          <Drawer />
+        </Box>
       </Flex>
     </Box>
   );

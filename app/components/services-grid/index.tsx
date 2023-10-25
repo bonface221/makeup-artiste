@@ -7,7 +7,7 @@ const ServicesGrid = () => {
       <SimpleGrid
         alignItems="center"
         columns={{ base: 1, sm: 2 }}
-        mx="284px"
+        mx={{ base: "50px", md: "100px", lg: "150px", xl: "240px" }}
         py="50px"
       >
         <Flex>

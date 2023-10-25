@@ -1,10 +1,9 @@
-import { Box, Flex, Heading, SimpleGrid, Stack, Text } from "@chakra-ui/react";
-import Image from "next/image";
+import { Box, Image, Heading, SimpleGrid, Stack, Text } from "@chakra-ui/react";
 
 const MyServices = () => {
   return (
     <Box bg="brand.lightBlue" py="96px">
-      <Stack mx="118px">
+      <Stack mx={{ base: "20px", md: "70px", lg: "118px" }}>
         <Heading
           as="h4"
           fontSize="15px"
@@ -28,11 +27,11 @@ const MyServices = () => {
           MAKEUP SERVICES
         </Heading>
 
-        <SimpleGrid columns={{ base: 1, sm: 2 }}>
+        <SimpleGrid columns={{ base: 1, md: 2 }} gap={10}>
           {[1, 2].map((item) => (
             <Stack key={item} position="relative">
-              <Image src="/s1.png" width={560} height={400} alt="service 1" />
-              <Flex
+              <Image src="/s1.png" width="100%" height="100%" alt="service 1" />
+              {/* <Flex
                 position="absolute"
                 bottom={0}
                 bg="brand.main"
@@ -51,7 +50,7 @@ const MyServices = () => {
                 >
                   Eye Makeup
                 </Text>
-              </Flex>
+              </Flex> */}
             </Stack>
           ))}
         </SimpleGrid>

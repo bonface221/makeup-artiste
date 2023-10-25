@@ -11,7 +11,7 @@ import {
 const PricingPlan = () => {
   return (
     <Box bg="brand.lightBlue" py="90px">
-      <Stack mx="118px">
+      <Stack mx={{ base: "20px", md: "70px", lg: "118px" }}>
         <Heading
           color="brand.main"
           fontSize="15px"
@@ -44,7 +44,7 @@ const PricingPlan = () => {
         >
           PRICING PLAN
         </Heading>
-        <SimpleGrid columns={{ base: 1, md: 2 }} spacing="24px">
+        <SimpleGrid columns={{ base: 1, lg: 2 }} spacing="24px">
           {[1, 2].map((item) => (
             <Flex
               key={item}

@@ -1,5 +1,4 @@
-import { Box, Flex, Heading, Stack, Text } from "@chakra-ui/react";
-import Image from "next/image";
+import { Box, Flex, Heading, Stack, Text, Image } from "@chakra-ui/react";
 
 const AboutMe = () => {
   return (
@@ -18,9 +17,20 @@ const AboutMe = () => {
         background: "brand.main",
       }}
     >
-      <Flex mx="118px" gap="54px">
-        <Box>
-          <Image width="452" height="500" src="/about-me.png" alt="about-me" />
+      <Flex
+        flexDir={{ base: "column", md: "row" }}
+        mx={{ base: "20px", md: "70px", lg: "118px" }}
+        gap={{ base: "30px", md: "54px" }}
+        align="center"
+      >
+        <Box flex={1}>
+          <Image
+            borderRadius="md"
+            w="100%"
+            height="fit-content"
+            src="/about-me.png"
+            alt="about-me"
+          />
         </Box>
         <Stack flex={2} gap="24px">
           <Heading
