@@ -1,5 +1,6 @@
 import AboutMe from "./components/about-me";
 import Contact from "./components/contact";
+import Footer from "./components/footer";
 import Hero from "./components/hero";
 import Portfolio from "./components/portfolio";
 import PricingPlan from "./components/pricing-plans";
@@ -16,6 +17,7 @@ export default function Home() {
       <PricingPlan />
       <Portfolio />
       <Contact />
+      <Footer />
     </main>
   );
 }
