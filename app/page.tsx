@@ -1,4 +1,5 @@
 import AboutMe from "./components/about-me";
+import Contact from "./components/contact";
 import Hero from "./components/hero";
 import Portfolio from "./components/portfolio";
 import PricingPlan from "./components/pricing-plans";
@@ -14,6 +15,7 @@ export default function Home() {
       <ServicesGrid />
       <PricingPlan />
       <Portfolio />
+      <Contact />
     </main>
   );
 }
